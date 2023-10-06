@@ -1,0 +1,15 @@
+{
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "DownstreamScheme": "http",
+    "UseServiceDiscovery": true,
+    "ServiceDiscoveryProvider": {
+      //"Host": "192.168.12.30",
+      //"Port": 5146,
+      "Host": "ApiGateway",
+      "Port": 80,
+      //Type can be Consul, Eureka
+      "Type": "Eureka"
+    }
+  }
+}

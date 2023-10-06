@@ -1,0 +1,50 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "apigateway",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "ApiGateway",
+          "Version": "1.0",
+          //"Url": "http://192.168.12.30:5146/swagger/v1/swagger.json"
+          "Url": "http://apigateway:80/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "location",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Location.API",
+          "Version": "1.0",
+          //"Url": "http://192.168.12.30:5146/location/swagger/v1/swagger.json",
+          "Url": "http://apigateway:80/location/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "customer",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Customer.API",
+          "Version": "1.0",
+          "Url": "http://192.168.12.30:5146/customer/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "product",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Product.API",
+          "Version": "1.0",
+          "Url": "http://192.168.12.30:5146/product/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
